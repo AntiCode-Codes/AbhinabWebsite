@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Test</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+body {
+	margin: 0;
+	background: #222;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+header {
+  background: #55d6aa;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+}
+.logo:hover{
+  cursor: pointer;
+}
+
+nav {
+  float: right;
+
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+.text{
+  color: white;
+}
+.anticode{
+  color: white;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+      </style>
+  </head>
+  <body>
+    <header>
+    <div class="container">
+      <h1 class="logo">Abhinab</h1>
+
+
+      <nav>
+        <ul>
+          <li><a href="about-us.html">About ME</a></li>
+          <li><a href="blank.html">Blank</a></li>
+          <li><a href="tricks.html">Tricks</a></li>
+          <li><a href="friends.html">Friends</a></li>
+          <li><a href="youtube.html">Youtube</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <h1 class="text">I've Gotten 2 Youtube Channels Here Is A list Of My Channels Click On Them It Will Take It To The Channel </h1>
+    <li class="anticode" onclick="window.open('https://www.youtube.com/channel/UCztlSAsCc_JxhYrlc_KJ89Q')">AntiCode</li>
+    <li class="anticode" onclick="window.open('')">Abhinab Minecraft</li>
+  </body>
+</html>
